@@ -10,34 +10,65 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
+  width: 400px;
+  margin: 0 auto;
+  height: 100vh;
 }
 .form p {
   font-size: 20px;
   color: #424242;
 }
-.form h3 {
+form h3 {
   font-size: 36px;
 }
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 20px 0;
 }
 .form-group .label-field {
   font-size: 14px;
   color: #757575;
   margin-bottom: 5px;
 }
+
 .form-group .input-field {
-  width: 400px;
   padding: 10px 5px;
   border: 1px solid #e0e0e0;
   border-radius: 16px;
+  outline: none;
 }
-.form-group.checkbox {
-  display: inline-block;
+.input-field:focus {
+  border-color: #00c247;
+}
+.checkbox {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.checkbox input[type="checkbox"] {
-  margin-left: 0%;
+.checkbox label {
+  font-weight: 600;
+}
+.checkbox a {
+  text-decoration: none;
+  color: #616161;
+}
+.checkbox input[type="checkbox"],
+button {
+  cursor: pointer;
+}
+.form button {
+  border: 0;
+  color: #fff;
+  background: #482d83;
+  border-radius: 16px;
+  padding: 12px 64px;
+  font-weight: 600;
+  transition: filter 0.3s ease-in;
+}
+form button:hover {
+  filter: brightness(1.5);
+  font-weight: 700;
 }
