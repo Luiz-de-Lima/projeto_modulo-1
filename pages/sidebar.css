@@ -17,6 +17,7 @@ header img {
   padding: 1rem 0;
   font-weight: 600;
   border-radius: 8px;
+  cursor: pointer;
 }
 .navbar li a {
   color: #fff;
