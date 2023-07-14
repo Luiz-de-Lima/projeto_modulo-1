@@ -15,20 +15,31 @@
 </head>
 
 <body>
-  <header>
-    <picture><img src="../images/mentorclass.png" alt="logo mentorclass"></picture>
-    <nav class="navbar">
-      <ul>
+  <div class="container" style="display: flex;justify-content: space-between">
+    <header>
+      <picture><img src="../images/mentorclass.png" alt="logo mentorclass"></picture>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-user-tie"></i>
+              Mentores</a>
+          </li>
+          <li><a href="#"><i class="fa-solid fa-book-open-reader"></i> Mentorias</a></li>
+          <li><a href="#"><i class="fa-solid fa-clapperboard"></i> Turmas</a></li>
+          <li><a href="#"><i class="fa-solid fa-users"></i> Alunos</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <li><a href="#"> <i class="fa-solid fa-user-tie"></i>
-            Mentores</a></li>
-        <li><a href="#"><i class="fa-solid fa-book-open-reader"></i> Mentorias</a></li>
-        <li><a href="#"><i><img src="../images/notebook-and-pen.png" alt=""></i> Turmas</a></li>
-        <li><a href="#">Alunos</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="user-info" id="userLoggedInName" style="display: flex;width: 260px;">
+      <i class="fa-solid fa-circle-user" style="color: #482d83;;"></i>
+      <div>
+        <p>Augusto Carvalho</p>
+        <span>augusto@gmail.com</span>
+      </div>
 
+    </div>
+
+  </div>
 
   <script src="https://kit.fontawesome.com/ac6f22b722.js" crossorigin="anonymous"></script>
 
