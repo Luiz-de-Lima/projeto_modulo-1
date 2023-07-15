@@ -1,9 +1,11 @@
-header {
+.sidebar {
+  position: fixed;
   background: #482d83;
   height: 1208px;
   width: 275px;
   padding: 2rem;
 }
+
 header img {
   margin-bottom: 10px;
 }
@@ -22,4 +24,83 @@ header img {
 .navbar li a {
   color: #fff;
   text-decoration: none;
+}
+
+.user-info {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 130px;
+  padding-right: 10px;
+}
+.user-info i {
+  font-size: 56px;
+  margin-right: 10px;
+}
+.user-name p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.user-name span {
+  color: #757575;
+  font-weight: 400;
+}
+.dashboard {
+  margin-left: 270px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1646px;
+  padding: 1.5rem;
+}
+.box {
+  box-shadow: 0px 0px 25px 0px rgba(163, 163, 163, 0.3);
+  border-radius: 24px;
+  width: 100%;
+  max-width: 1582px;
+  height: 846px;
+}
+
+.dashboard-mentores_input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.dashboard-mentores_input input {
+  width: 350px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 26px;
+  outline: 0;
+}
+.dashboard-mentores_input button {
+  background-color: #00c247;
+  padding: 12px 64px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 16px;
+  transition: filter 0.3s ease;
+}
+
+.dashboard-mentores_input button:hover {
+  filter: brightness(1.2);
+}
+
+.dashboard-mentores_data {
+}
+.data_titles {
+  border-radius: 16px 16px 0px 0px;
+  background-color: #482d83;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.data_titles h4 {
+  font-weight: 400;
+}
+.data_description {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  color: #212121;
 }

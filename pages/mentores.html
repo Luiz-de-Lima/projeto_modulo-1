@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <div class="container" style="display: flex;justify-content: space-between">
+  <aside class="sidebar" style="display: flex;justify-content: space-between">
     <header>
       <picture><img src="../images/mentorclass.png" alt="logo mentorclass"></picture>
       <nav class="navbar">
@@ -30,16 +30,43 @@
       </nav>
     </header>
 
-    <div class="user-info" id="userLoggedInName" style="display: flex;width: 260px;">
-      <i class="fa-solid fa-circle-user" style="color: #482d83;;"></i>
-      <div>
-        <p>Augusto Carvalho</p>
-        <span>augusto@gmail.com</span>
+  </aside>
+  <div class="user-info" id="userLoggedInName">
+    <i class="fa-solid fa-circle-user" style="color: #482d83;"></i>
+    <div class="user-name">
+      <p>Augusto Carvalho</p>
+      <span>augusto@gmail.com</span>
+    </div>
+  </div>
+  <main class="dashboard dashboard-mentores">
+
+    <h2>Mentores</h2>
+    <div class="dashboard-mentores_search box">
+      <div class="dashboard-mentores_input">
+        <input type="search" name="" id="">
+        <button>Nova Mentoria</button>
+      </div>
+      <div class="dashboard-mentores_data">
+        <div class="data_titles">
+          <h4>Título da mentoria</h4>
+          <h4>Mentor</h4>
+          <h4>Status</h4>
+          <h4>Ações</h4>
+        </div>
+        <div class="data_description">
+          <p>Gerenciamento 
+          </p>
+          <p>Maria Luiza</p>
+          <button>Ativo</button>
+          <div class="edit-delete-actions">
+            <button><i class="fa-solid fa-pen-to-square"></i></button>
+            <button><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+        </div>
       </div>
 
     </div>
-
-  </div>
+  </main>
 
   <script src="https://kit.fontawesome.com/ac6f22b722.js" crossorigin="anonymous"></script>
 
