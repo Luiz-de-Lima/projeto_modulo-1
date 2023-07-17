@@ -63,7 +63,7 @@ header img {
 .dashboard-mentores_input {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 32px;
 }
 .dashboard-mentores_input input {
   width: 350px;
@@ -93,14 +93,20 @@ header img {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 .data_titles h4 {
   font-weight: 400;
 }
-.data_description {
+.data_paragraphs {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
   color: #212121;
+  padding: 0.8rem;
+}
+.paragraphs-section {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
 }
