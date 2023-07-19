@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>Mentores</title>
+
+  <script src="https://kit.fontawesome.com/ac6f22b722.js" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="../css/all.css">
 </head>
+
 <body>
-  <main class="dashboard dashboard-mentoria"></main>
+  <aside class="sidebar" style="display: flex;justify-content: space-between">
+    <header>
+      <picture><img src="../images/mentorclass.png" alt="logo mentorclass"></picture>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-user-tie"></i>
+              Mentores</a>
+          </li>
+          <li><a href="#"><i class="fa-solid fa-book-open-reader"></i> Mentorias</a></li>
+          <li><a href="#"><i class="fa-solid fa-clapperboard"></i> Turmas</a></li>
+          <li><a href="#"><i class="fa-solid fa-users"></i> Alunos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  </aside>
+  <div class="user-info" id="userLoggedInName">
+    <i class="fa-solid fa-circle-user" style="color: #482d83;"></i>
+    <div class="user-name">
+      <p>Augusto Carvalho</p>
+      <span>augusto@gmail.com</span>
+    </div>
+  </div>
+  <main class="dashboard dashboard-mentores">
+
+    <h2>Mentores</h2>
+    <div class="dashboard-mentores_search box">
+      <div class="dashboard-mentores_input">
+        <input type="search" name="" id="">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <button><i class="fa-regular fa-plus fa-xl"></i> Nova Mentoria</button>
+      </div>
+      <div class="dashboard-mentores_data">
+        <div class="data_titles">
+          <h4>Nome</h4>
+          <h4>Email</h4>
+          <h4>Ações</h4>
+        </div>
+        <div class="data_paragraphs">
+          <div class="paragraphs-section">
+            <p>Juliana Amaral
+            </p>
+            <p>juliana@gmail.com</p>
+          </div>
+
+          <div class="button-actions">
+            <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="delete"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://kit.fontawesome.com/ac6f22b722.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>

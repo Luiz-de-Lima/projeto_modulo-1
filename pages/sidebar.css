@@ -58,6 +58,7 @@ header img {
   width: 100%;
   max-width: 1582px;
   height: 846px;
+  padding: 0.8rem;
 }
 
 .dashboard-mentores_input {
@@ -74,12 +75,12 @@ header img {
   color: #000;
 }
 
-.dashboard-mentores_input .search-icon{
+.dashboard-mentores_input .search-icon {
   position: absolute;
-    left: 40%;
-    top: 28.9%;
-    transform: translateY(-50%);
-    font-size: 24px;
+  left: 40%;
+  top: 30.9%;
+  transform: translateY(-50%);
+  font-size: 24px;
 }
 .dashboard-mentores_input button {
   background-color: #00c247;
@@ -95,8 +96,6 @@ header img {
   filter: brightness(1.2);
 }
 
-.dashboard-mentores_data {
-}
 .data_titles {
   border-radius: 16px 16px 0px 0px;
   background-color: #482d83;
@@ -104,7 +103,7 @@ header img {
   display: flex;
   justify-content: space-between;
   padding: 0.8rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 .data_titles h4 {
   font-weight: 400;
@@ -112,11 +111,25 @@ header img {
 .data_paragraphs {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #212121;
   padding: 0.8rem;
+  background: #fafafa;
 }
 .paragraphs-section {
   display: flex;
   justify-content: space-between;
   width: 60%;
+}
+.button-actions button {
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  padding: 5px;
+}
+.button-actions .edit {
+  color: blue;
+}
+.button-actions .delete {
+  color: red;
 }
