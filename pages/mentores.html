@@ -20,12 +20,22 @@
       <picture><img src="../images/mentorclass.png" alt="logo mentorclass"></picture>
       <nav class="navbar">
         <ul>
-          <li><i class="fa-solid fa-user-tie"></i>
-            <a href="./mentores.html">Mentores</a>
+          <li>
+            <i class="fa-solid fa-user-tie"></i>
+            <a class="menu-item" href="./mentores.html">Mentores</a>
           </li>
-          <li><a href="./mentorias.html"><i class="fa-solid fa-book-open-reader"></i> Mentorias</a></li>
-          <li><i class="fa-solid fa-clapperboard"></i><a href="./turmas.html"> Turmas</a> </li>
-          <li><a href="./alunos.html"><i class="fa-solid fa-users"></i> Alunos</a></li>
+          <li>
+            <i class="fa-solid fa-book-open-reader"></i>
+            <a class="menu-item" href="./mentorias.html">Mentorias</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-clapperboard"></i>
+            <a class="menu-item" href="./turmas.html"> Turmas</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-users"></i>
+            <a class="menu-item" href="./alunos.html"> Alunos</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -41,11 +51,11 @@
   <main class="dashboard dashboard-mentores">
 
     <h2>Mentores</h2>
-    <div class="dashboard-mentores_search box">
+    <div class="dashboard-mentores_search box" id="content">
       <div class="dashboard-mentores_input">
         <input type="search" name="" id="">
         <i class="fa-solid fa-magnifying-glass search-icon"></i>
-        <button><i class="fa-regular fa-plus fa-xl"></i> Nova Mentoria</button>
+        <button class="met"><i class="fa-regular fa-plus fa-xl"></i> Nova Mentoria</button>
       </div>
       <div class="dashboard-mentores_data">
         <div class="data_titles">
@@ -71,6 +81,7 @@
   </main>
 
   <script src="https://kit.fontawesome.com/ac6f22b722.js" crossorigin="anonymous"></script>
+  <script src="../js/scriptMentor.js"></script>
 
 </body>
 
