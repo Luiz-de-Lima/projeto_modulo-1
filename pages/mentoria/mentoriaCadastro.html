@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/mentoria/styleMentoriaNewEdit.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- ICONSBOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- ICONSBOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+     crossorigin="anonymous"></script>  
+
+    <script src="https://kit.fontawesome.com/2b32d66645.js" crossorigin="anonymous"></script>
+
+    <title>Nova Mentoria</title>
+</head>
+<body>
+    <div  class="containerBox">
+        <aside class="sideBar">
+            <div class="menu">
+                <div class="titleSideBar">
+                    <h1 id="fTxt">Mentor</h1>
+                    <h1 id="sTxt">Class</h1>
+                </div>
+                <div class="sideMenu">
+                    <a href="../mentor/mentorIndex.html"  style="text-decoration:none;">
+                        <div class="btnSideBar" id="mentorGeral">
+                            <span>
+                                <i class="fa-solid fa-user-tie" style="color: #ededed;"></i>
+                            </span>
+                            Mentores
+                        </div>
+                    </a>
+                    <a href="../mentoria/mentoriaIndex.html" style="text-decoration:none;">
+                        <div class="btnSideBar" id="mentorClass">
+                            <span>
+                                <i class="fa-regular fa-address-book" style="color: #ededed;"></i>
+                            </span>
+                            Mentorias
+                        </div>
+                    </a>
+                    <a href="../turmas/turmasIndex.html" style="text-decoration:none;">
+                        <div class="btnSideBar" id="mentorRooms" onclick="redirectToClasses()">
+                            <span>
+                                <i class="fa-solid fa-school"></i>
+                            </span>
+                            Turmas
+                        </div>
+                    </a>
+                    <a href="../alunos/alunoIndex.html" style="text-decoration:none;">
+                        <div class="btnSideBar" id="mentorStudents" onclick="redirectToAlunos()">
+                            <span>
+                                <i class="fa-solid fa-clipboard-user"></i>
+                            </span>
+                            Aluno
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        
+        <div class="boxContent">
+            <header class="headerUser">
+                <div class="headerUserContent">
+                    <div>   
+                        <i class="fa-solid fa-circle-user fa-3x" style="color: #6950A1;"></i>
+                    </div>
+                    <div>
+                        <div class="userName" id="userName">Arthur Doyle</div>
+                        <div class="userEmail" id="userEmail">swordLetter@gmail.com</div>
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="titleBackMain">
+                <a href="mentoriaIndex.html">
+                    <button class="btnIconsBack"><i class="fa-solid fa-arrow-left" style="color: #616161;"></i></button>
+                </a>
+                <h4>Nova mentoria</h4>
+            </div>
+
+            <main class="mainContent">
+                <form id="formulario" action="">
+                        <div class="titleEditCard">
+                            <h5>Dados</h5>
+                            <hr>
+                        </div>        
+                        <div class="formCad">
+                            <div class="btnGet">
+                                <label class="label" for="nome">Titulo da mentoria</label>
+                                <input class="inputGet" type="text" id="nomeMentoria" placeholder="Insira o nome da Mentoria">
+                            </div>
+                            <div class="btnGet">
+                                <label class="mentorList">Mentor</label>
+                                <select  class="selectInp" type="text" id="nomeMentor"></select>
+                            </div>
+                        </div>
+                        <div class="statusToggle">
+                            <p class="label">Status</p>
+                            <div class="toggleContainer">
+                                  <input onclick="toggleStatus()" type="checkbox" name="statusToggle" id="statusToggle" />
+                                  <label for="statusToggle" class="toggleSwitch">
+                                    <span class="slider"></span>
+                                </label>
+                                <p id="statusTxt">Inativo</p>
+                                <label for="statusToggle"></label>
+                            </div>
+                            <button class="btnGetCard" id="salvaMentoria" type="submit">
+                                Salvar
+                            </button>
+                        </div>
+                </form>
+                </main>
+            </main>
+
+        </div>
+
+
+    </div>
+
+    <script src="../../js/mentoria/cadastro.js" defer></script></body>
+</html>
