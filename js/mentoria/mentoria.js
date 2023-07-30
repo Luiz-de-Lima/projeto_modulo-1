@@ -1,4 +1,4 @@
-// ---------------------MENTORIA INDEX----------------------------//
+
 
 const renderMentor = (mentorias) => {
   const dataHeaderFirst = document.getElementById('dataHeaderFirst');
@@ -42,7 +42,7 @@ const renderMentor = (mentorias) => {
 // Array que conterá os dados dos mentores
 let mentorsData = [];
 
-// ----------------- FUNÇÃO PARA BUSCAR A LISTA DE MENTORES -----------------
+//  FUNÇÃO PARA BUSCAR A LISTA DE MENTORES 
 const getMentorias = async () => {
   try {
     const response = await fetch("https://apimentorclass.onrender.com/mentorias");
@@ -56,10 +56,10 @@ const getMentorias = async () => {
     console.error("Erro ao buscar mentores:", error);
   }
 };
-//---------chamada da função e renderização------------//
+//chamada da função e renderização//
 getMentorias();
 
-// ----------------- FUNÇÃO PARA FILTRAR A LISTA DE MENTORES COM BASE NA BARRA PESQUISA -----------------
+// FUNÇÃO PARA FILTRAR A LISTA DE MENTORES COM BASE NA BARRA PESQUISA
 
 const searchInput = document.getElementById('searchInput');
 
@@ -78,22 +78,22 @@ searchInput.addEventListener('input', filterMentores);
 
 
 
-//-------------------NEW MENTOR---------------------//
+//-NEW MENTOR---//
 const newMentorBtn = document.getElementById('newMentorBtn');
-  newMentorBtn.addEventListener('click', () => {
-    window.location = "mentoriaCadastro.html";
-  });
+newMentorBtn.addEventListener('click', () => {
+  window.location = "mentoriaCadastro.html";
+});
 
 
-// --------------EDITA MENTOR-------------------
+// -----EDITA MENTOR-
 const editarMentor = (id) => {
-    window.location = `mentoriaEditavel.html?id=${id}`
-// console.log('Editar Mentor:', idMentor);
+  window.location = `mentoriaEditavel.html?id=${id}`
+  // console.log('Editar Mentor:', idMentor);
 };
 
 
 
-// --------------DELETA MENTOR--------------------------//
+// -----DELETA MENTOR--------//
 const excluirMentor = async (id) => {
   try {
     await fetch(`https://apimentorclass.onrender.com/mentorias/${id}`, {

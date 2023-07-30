@@ -71,10 +71,10 @@ newMentorBtn.addEventListener('click', () => {
   window.location = "mentorCadastro.html";
 });
 
-//edita mentar
+//edita mentor
 const editMentor = (id) => {
   window.location = `mentorEditavel.html?id=${id}`
-  // console.log('Editar Mentor:', idMentor);
+
 
 };
 

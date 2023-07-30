@@ -160,7 +160,6 @@ h4 {
 }
 
 .formCad {
-  /* margin-left: 19px; */
   margin: -30px 20px;
   display: flex;
 }
@@ -194,7 +193,7 @@ input {
 }
 
 .btnGetCard {
-  margin: 25px; /* Margem vertical de 10px e margem horizontal de 5px */
+  margin: 25px;
   padding: 10px 20px;
   background: #482d83;
   color: white;
@@ -214,33 +213,9 @@ input {
 #diaSemana {
   width: 270px;
 }
-/* ---------BOTAO MANUAL----------------------------- */
-/* .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    margin-top: 45vh;
-    left: 55vh;
-  }
-  .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    border-radius: 34px;
-    cursor: pointer;
-}
-.toogleBtn{
-    margin-left:30px;
-} */
-/* checkebox */
 
 .statusToggle {
   margin: 10px 30px;
-  /* font-weight: 800; */
 }
 
 .statusToggle .toggleContainer {

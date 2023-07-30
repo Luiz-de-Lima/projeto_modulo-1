@@ -1,249 +1,229 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Sora', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
 }
 
-/* --------------TELA MENTORES - INDEX ---------------------------------------*/
-
-.containerBox{
-    display: flex;
-    width: 100%;
-    height: 100vh;
+.containerBox {
+  display: flex;
+  width: 100%;
+  height: 100vh;
 }
 
-.iconSideMenu{
-    margin-right: 5px;
+.iconSideMenu {
+  margin-right: 5px;
 }
-.sideBar{
-    background: #482D83;
-    padding-top: 5px;
-    font-family: 'Poppins', sans-serif;
-    min-height: 110%;
+.sideBar {
+  background: #482d83;
+  padding-top: 5px;
+  font-family: "Poppins", sans-serif;
+  min-height: 110%;
+}
+.menu {
+  background: #482d83;
+}
+.titleSideBar {
+  display: flex;
+  margin: 20px;
+  font-size: 20px;
+}
+.titleSideBar h1 {
+  font-size: 25px;
+}
+#fTxt {
+  color: #fbb04d;
+}
+#sTxt {
+  color: white;
+}
 
+.sideMenu {
+  text-align: justify;
+  margin-left: 15px;
 }
-.menu{
-    background: #482D83;
+.sideMenu div {
+  margin-left: 25px;
+  font-size: 16px;
+  margin: 5px;
+  color: white;
+  height: 56px;
+  border-radius: 5px;
+  align-items: center;
 }
-.titleSideBar{
-    display: flex;
-    margin: 20px;
-    font-size: 20px
-}
-.titleSideBar h1{
-    font-size:25px
-}
-#fTxt{
-    color: #FBB04D;
-} 
-#sTxt{
-    color: white;
-}
-
-.sideMenu{
-    text-align: justify;
-    margin-left: 15px;
-}
-.sideMenu div{
-    margin-left: 25px;
-    font-size: 16px;
-    margin: 5px;
-    color: white;
-    height: 56px;
-    border-radius: 5px;
-    align-items: center;
-}
-.btnSideBar{
-    display: flex;
-    font-family: 'Sora''sans-serif';
+.btnSideBar {
+  display: flex;
+  font-family: "Sora" "sans-serif";
 }
 .btnSideBar:hover {
-    background-color: #564696;
-    height: 56px;
-    border-radius: 10px;
-    margin-right: 25px;
-    cursor: pointer;
+  background-color: #564696;
+  height: 56px;
+  border-radius: 10px;
+  margin-right: 25px;
+  cursor: pointer;
 }
-.btnSideBar i{
-    margin-right: 10px
-    /* margin-left: 5px; */
-}
-
-
-/* ------------HEADER USUARIO------------- */
-.boxContent{
-    background: #FCFCFC;
-    width: 100%;
-    height: 100vh;
-}
-.headerUser{
-    display:flex;
-    justify-content: end;
-    width: 100%;
-    height: 130px;
-    background-color: rgb(255, 255, 255);
-}
-.headerUserContent{
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    height: 100px;
-    padding: 20px;
-}
-h4{
-    margin: 25px;
-    font-size: 25px;
-}
-.formContent{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 32px;
-    margin: 30px;
+.btnSideBar i {
+  margin-right: 10px;
 }
 
-
-/* ---------------------------------CAIXA PAI---------------------------- */
-.mainContent{
-    background: white;
-    max-width:  95%;
-    max-height: 100vh;
-    border-radius: 24px;
-    padding: 0.1px;
-    box-shadow: 0px 0px 25px 0px rgba(163, 163, 163, 0.2);
-    margin-left: 15px;
+.boxContent {
+  background: #fcfcfc;
+  width: 100%;
+  height: 100vh;
 }
-  
-
-
-/* -------------------------ABAIXO HEADER----------------------------------*/
-.titleBackMain{
-    display: flex;
-    margin-left: 15px;
+.headerUser {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  height: 130px;
+  background-color: rgb(255, 255, 255);
+}
+.headerUserContent {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  height: 100px;
+  padding: 20px;
+}
+h4 {
+  margin: 25px;
+  font-size: 25px;
+}
+.formContent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  margin: 30px;
 }
 
-/* ---------------------BOTÃO PESQUISA & BOTÃO CRIAR-----------------------*/
-searchBtn{
-    font-size: 16px;
-    width: 400px;
-    height: 56px;
-    border-radius: 16px;
-    padding-left: 16px;
-    border: 1.5px solid #E0E0E0;
-    border-radius: 16px;
+.mainContent {
+  background: white;
+  max-width: 95%;
+  max-height: 100vh;
+  border-radius: 24px;
+  padding: 0.1px;
+  box-shadow: 0px 0px 25px 0px rgba(163, 163, 163, 0.2);
+  margin-left: 15px;
+}
+
+.titleBackMain {
+  display: flex;
+  margin-left: 15px;
+}
+
+.searchBtn {
+  font-size: 16px;
+  width: 400px;
+  height: 56px;
+  border-radius: 16px;
+  padding-left: 16px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 16px;
 }
 .input {
-    width: 325px;
-    height: 40px;
-    border: 1px solid #E0E0E0;
-    border-radius: 10px;
-    color: #757575;
-    padding: 5px;
-    outline: none;
+  width: 325px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  color: #757575;
+  padding: 5px;
+  outline: none;
 }
 .greenBtn {
-    background-color: #00C247;
-    width: 220px;
-    height: 45px;
-    border: 1px solid #E6E6E6;
-    border-radius: 10px;
-    color: #EFFBF4;
-    font-weight: 400;
-    font-size: 15px;
+  background-color: #00c247;
+  width: 220px;
+  height: 45px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  color: #effbf4;
+  font-weight: 400;
+  font-size: 15px;
 }
-.greenBtn:hover{
-    cursor: pointer;
-    background: #01a13c;
-    transition: 0.5s;
+.greenBtn:hover {
+  cursor: pointer;
+  background: #01a13c;
+  transition: 0.5s;
 }
-.searchBtn i{
-    position: absolute;
-    top: 205px;
-    left: 570px;
+.searchBtn i {
+  position: absolute;
+  top: 205px;
+  left: 570px;
 }
-#searchGlass{
-    cursor: pointer;
-}
-
-
-/*---------------TABELA--------------------*/
-
-.headerContent{
-    display: flex;
-}
-.headerTab{
-    width: 100%;
-    text-align: center;
+#searchGlass {
+  cursor: pointer;
 }
 
-.headerTabAct{
-    text-align: center;
+.headerContent {
+  display: flex;
+}
+.headerTab {
+  width: 100%;
+  text-align: center;
 }
 
-.leftCurve{
-    border-radius: 16px 0px 0px 0px;
-}
-.rightCurve{
-    border-radius: 0px 16px 0px 0px;
+.headerTabAct {
+  text-align: center;
 }
 
-.dataBox{
-    color: white;
-    background:#482D83;
-    height: 65px;
-    padding: 24px 40px;
-    /* max-width: 100%; */
+.leftCurve {
+  border-radius: 16px 0px 0px 0px;
+}
+.rightCurve {
+  border-radius: 0px 16px 0px 0px;
 }
 
-.dataList{
-    height: 80px;
-    padding: 17px 30px;
-    /* align-items: center; */
-    margin: -17px 0;
-}
-.dataList :nth-child(1){
-    margin-right: 5px;
-
-}
-.dataList img:hover{
-    cursor: pointer;
+.dataBox {
+  color: white;
+  background: #482d83;
+  height: 65px;
+  padding: 24px 40px;
 }
 
-.colorChangeOdd{
-    background-color: #d6d5d5;
+.dataList {
+  height: 80px;
+  padding: 17px 30px;
+  margin: -17px 0;
 }
-.colorChangeEven{
-    background-color: #f2f0f0;
+.dataList :nth-child(1) {
+  margin-right: 5px;
 }
-.btnEdit{
-    color: #004ce8;
+.dataList img:hover {
+  cursor: pointer;
 }
-.btnTrash{
-    color: #ff3333;
+
+.colorChangeOdd {
+  background-color: #d6d5d5;
+}
+.colorChangeEven {
+  background-color: #f2f0f0;
+}
+.btnEdit {
+  color: #004ce8;
+}
+.btnTrash {
+  color: #ff3333;
 }
 .btnIcons {
-    border-radius: 20px;
-    border: 1px solid #BDBDBD;
-    background-color: #FFFFFF;
-    height: 30px;
-    width: 30px;
-
+  border-radius: 20px;
+  border: 1px solid #bdbdbd;
+  background-color: #ffffff;
+  height: 30px;
+  width: 30px;
 }
-.btnIcons i{
-    margin-left: 3px
+.btnIcons i {
+  margin-left: 3px;
 }
 
-.chekedOn{ 
-    color: #00C247;
-    background: #D9FEE6;
-    padding: 6px 18px;
-    border-radius: 8px;
+.chekedOn {
+  color: #00c247;
+  background: #d9fee6;
+  padding: 6px 18px;
+  border-radius: 8px;
 }
-.chekedOff{
-    color: #FF3333;
-    background: #FFE1E1;
-    padding: 7px 10px;
-    border-radius: 8px;
-
+.chekedOff {
+  color: #ff3333;
+  background: #ffe1e1;
+  padding: 7px 10px;
+  border-radius: 8px;
 }
