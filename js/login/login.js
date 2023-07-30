@@ -7,8 +7,8 @@ btnLogin.addEventListener("click", (e) => {
     const senha = document.getElementById("password").value.trim();
 
     if (email === "" || senha === "") {
-        alert("Por favor, preencha todos os campos do formulário.");
+        alert("Campos vazios, por favor preencha");
     } else {
-        window.location.href = "pages/mentor/mentor.html";
+        window.location.href = "pages/mentores/mentores.html";
     }
 });

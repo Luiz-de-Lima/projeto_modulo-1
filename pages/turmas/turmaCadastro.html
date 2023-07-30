@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../style/turmas/styleTurmaNewEdit.css">
+    <link rel="stylesheet" href="../../style/turmas/styleTurmaNew.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
@@ -16,22 +17,24 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>  
-    
+        crossorigin="anonymous"></script>
+
     <script src="https://kit.fontawesome.com/2b32d66645.js" crossorigin="anonymous"></script>
 
     <title>Nova Turma</title>
 </head>
+
 <body>
     <div class="containerBox">
         <aside class="sideBar">
             <div class="menu">
                 <div class="titleSideBar">
-                    <h1 id="fTxt">Mentor</h1>
-                    <h1 id="sTxt">Class</h1>
+                    <div class="logo">
+                        <img src="../../images/mentorclass.png" alt="">
+                    </div>
                 </div>
                 <div class="sideMenu">
-                    <a href="../mentor/mentorIndex.html" style="text-decoration:none;">
+                    <a href="../mentor/mentor.html" style="text-decoration:none;">
                         <div class="btnSideBar" id="mentorGeral">
                             <span>
                                 <i class="fa-solid fa-user-tie" style="color: #ededed;"></i>
@@ -39,7 +42,7 @@
                             Mentores
                         </div>
                     </a>
-                    <a href="../mentoria/mentoriaIndex.html"  style="text-decoration:none;">
+                    <a href="../mentoria/mentoria.html" style="text-decoration:none;">
                         <div class="btnSideBar" id="mentorClass">
                             <span>
                                 <i class="fa-regular fa-address-book" style="color: #ededed;"></i>
@@ -47,7 +50,7 @@
                             Mentorias
                         </div>
                     </a>
-                    <a href="../turmas/turmasIndex.html" style="text-decoration:none;">
+                    <a href="../turmas/turmas.html" style="text-decoration:none;">
                         <div class="btnSideBar" id="mentorRooms" onclick="redirectToClasses()">
                             <span>
                                 <i class="fa-solid fa-school"></i>
@@ -55,7 +58,7 @@
                             Turmas
                         </div>
                     </a>
-                    <a href="../alunos/alunoIndex.html" style="text-decoration:none;">
+                    <a href="../alunos/aluno.html" style="text-decoration:none;">
                         <div class="btnSideBar" id="mentorStudents" onclick="redirectToAlunos()">
                             <span>
                                 <i class="fa-solid fa-clipboard-user"></i>
@@ -66,11 +69,11 @@
                 </div>
             </div>
         </aside>
-        
+
         <div class="boxContent">
             <header class="headerUser">
                 <div class="headerUserContent">
-                    <div>   
+                    <div>
                         <i class="fa-solid fa-circle-user fa-3x" style="color: #6950A1;"></i>
                     </div>
                     <div>
@@ -81,7 +84,7 @@
             </header>
 
             <div class="titleBackMain">
-                <a href="turmasIndex.html">
+                <a href="turmas.html">
                     <button class="btnIconsBack"><i class="fa-solid fa-arrow-left" style="color: #616161;"></i></button>
                 </a>
                 <h4>Nova Turma</h4>
@@ -93,19 +96,19 @@
                             <h5>Mentoria</h5>
                             <hr>
                         </div>
-                        
+
                         <div class="formCad">
                             <div class="btnGet">
                                 <label for="mentoria">Mentoria</label>
-                                <!-- <input class="inputGet" type="text" id="nomeAluno" placeholder="Insira seu nome"> -->
+
                                 <select name="mentoria" id="mentoria" class="inputSelect"></select>
                             </div>
                             <div class="btnGet">
                                 <label for="mentor">mentor</label>
-                                <!-- <input class="inputGet" type="email" id="emailAluno" placeholder="Insira seu e-mail"> -->
+
                                 <select name="mentor" id="mentor" class="inputSelect"></select>
                             </div>
-                            
+
                         </div>
                         <div class="formCadTime">
                             <div class="btnGetSelect">
@@ -135,15 +138,18 @@
                         <div class="turmaContent">
                             <div class="stretchTurma">
                                 <label for="turma">Turma</label>
-                                <input required class="inputGet" type="text" name="turma" id="turma" placeholder="Insira a turma">
+                                <input required class="inputGet" type="text" name="turma" id="turma"
+                                    placeholder="Insira a turma">
                             </div>
                             <div class="stretchAula">
                                 <label for="link">Link da Aula</label>
-                                <input required class="inputGet" type="text" name="link" id="" placeholder="Insira o link da turma">
+                                <input required class="inputGet" type="text" name="link" id=""
+                                    placeholder="Insira o link da turma">
                             </div>
                             <div class="stretchEncontros">
-                                <label for="encontros">Qtd de encontros</label>
-                                <input required class="inputGet" type="text" name="encontros" id="encontros" placeholder="Quantidade encontros">
+                                <label for="encontros">Quantidade de encontros</label>
+                                <input required class="inputGet" type="text" name="encontros" id="encontros"
+                                    placeholder="Quantidade encontros">
                             </div>
 
                         </div>
@@ -159,4 +165,5 @@
 
     <script defer src="../../js/turmas/cadastro.js"></script>
 </body>
+
 </html>

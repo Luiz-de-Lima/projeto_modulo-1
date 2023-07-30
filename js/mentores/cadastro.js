@@ -1,4 +1,4 @@
-const novoMentor = async (mentores) => {
+const newMentor = async (mentores) => {
   try {
     await fetch('https://apimentorclass.onrender.com/mentores', {
       method: 'POST',
@@ -8,14 +8,15 @@ const novoMentor = async (mentores) => {
       },
       body: JSON.stringify(mentores)
     });
-    window.location = "mentor.html";
+    window.location = "mentores.html";
   } catch (error) {
     console.error("Erro ao criar novo mentor:", error);
   }
+  // novoMentor
+  // novoMentor
 };
 
-
-//-----OBTÉM INFORMAÇÕES DOS FORM GARANTINDO QUE ELAS SEJAM SALVAS E CONVERTIDAS PARA SEREM GUARDADAS----------//
+//-OBTÉM INFORMAÇÕES DOS FORM GARANTINDO QUE ELAS SEJAM SALVAS E CONVERTIDAS PARA SEREM GUARDADAS
 const formulario = document.getElementById('formulario');
 formulario.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -33,7 +34,7 @@ formulario.addEventListener('submit', (event) => {
     email: email,
   };
 
-  novoMentor(mentores);
+  newMentor(mentores);
 });
 
 // só prossegue caso o form esteja totalmente preenchido

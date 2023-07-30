@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styleAlunoNewEdit.css">
+    <link rel="stylesheet" href="styleMentorNewEdit.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
@@ -21,7 +21,7 @@
 
     <script src="https://kit.fontawesome.com/2b32d66645.js" crossorigin="anonymous"></script>
 
-    <title>Novo Aluno</title>
+    <title>Editar Mentor</title>
 </head>
 
 <body>
@@ -56,7 +56,7 @@
                             Turmas
                         </div>
                     </a>
-                    <a href="../alunos/alunos.html" style="text-decoration:none;">
+                    <a href="../alunos/aluno.html" style="text-decoration:none;">
                         <div class="btnSideBar" id="mentorStudents" onclick="redirectToAlunos()">
                             <span>
                                 <i class="fa-solid fa-clipboard-user"></i>
@@ -82,10 +82,10 @@
             </header>
 
             <div class="titleBackMain">
-                <a href="alunos.html">
+                <a href="mentor.html">
                     <button class="btnIconsBack"><i class="fa-solid fa-arrow-left" style="color: #616161;"></i></button>
                 </a>
-                <h4>Novo Aluno</h4>
+                <h4>Editar mentor</h4>
             </div>
             <main class="mainContent">
                 <section class="box-info">
@@ -97,15 +97,15 @@
 
                         <div class="formCad">
                             <div class="btnGet">
-                                <label class="label" for="nome">Nome</label>
-                                <input class="inputGet" type="text" id="nomeAluno" placeholder="Insira seu nome">
+                                <label class="label" for="nameChange">Nome</label>
+                                <input class="inputGet" type="text" id="nameChange" placeholder="Insira seu nome">
                             </div>
                             <div class="btnGet">
-                                <label class="emailMentor" for="email">E-mail</label>
-                                <input class="inputGet" type="email" id="emailAluno" placeholder="Insira seu e-mail">
+                                <label class="emailMentor" for="emailChange">E-mail</label>
+                                <input class="inputGet" type="email" id="emailChange" placeholder="Insira seu e-mail">
                             </div>
                         </div>
-                        <button class="btnGetCard" id="salvaAluno" type="submit">
+                        <button class="btnGetCard" id="salvarMentor" type="submit">
                             Salvar
                         </button>
                     </form>
@@ -114,7 +114,7 @@
         </div>
     </div>
 
-    <script defer src="../../js/alunos/cadastro.js"></script>
+    <script defer src="../../js/mentor/edit.js"></script>
 </body>
 
 </html>

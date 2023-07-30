@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleMentorNewEdit.css">
+    <link rel="stylesheet" href="./styleMentorNewEdit.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
@@ -21,7 +21,7 @@
 
     <script src="https://kit.fontawesome.com/2b32d66645.js" crossorigin="anonymous"></script>
 
-    <title>Editar Mentor</title>
+    <title>Cadastro de Novo Mentor</title>
 </head>
 
 <body>
@@ -29,11 +29,12 @@
         <aside class="sideBar">
             <div class="menu">
                 <div class="titleSideBar">
-                    <h1 id="fTxt">Mentor</h1>
-                    <h1 id="sTxt">Class</h1>
+                    <div class="logo">
+                        <img src="../../images/mentorclass.png" alt="">
+                    </div>
                 </div>
                 <div class="sideMenu">
-                    <a href="../mentor/mentorIndex.html" style="text-decoration:none;">
+                    <a href="../mentores/mentores.html" style="text-decoration:none;">
                         <div class="btnSideBar" id="mentorGeral">
                             <span>
                                 <i class="fa-solid fa-user-tie" style="color: #ededed;"></i>
@@ -41,7 +42,7 @@
                             Mentores
                         </div>
                     </a>
-                    <a href="../mentoria/mentoriaIndex.html" style="text-decoration:none;">
+                    <a href="../mentoria/mentoria.html" style="text-decoration:none;">
                         <div class="btnSideBar" id="mentorClass">
                             <span>
                                 <i class="fa-regular fa-address-book" style="color: #ededed;"></i>
@@ -83,10 +84,10 @@
             </header>
 
             <div class="titleBackMain">
-                <a href="mentorIndex.html">
+                <a href="mentores.html">
                     <button class="btnIconsBack"><i class="fa-solid fa-arrow-left" style="color: #616161;"></i></button>
                 </a>
-                <h4>Editar mentor</h4>
+                <h4>Novo mentor</h4>
             </div>
             <main class="mainContent">
                 <section class="box-info">
@@ -98,15 +99,15 @@
 
                         <div class="formCad">
                             <div class="btnGet">
-                                <label class="label" for="nameChange">Nome</label>
-                                <input class="inputGet" type="text" id="nameChange" placeholder="Insira seu nome">
+                                <label class="label" for="nome">Nome</label>
+                                <input class="inputGet" type="text" id="nomeMentor" placeholder="Insira seu nome">
                             </div>
                             <div class="btnGet">
-                                <label class="emailMentor" for="emailChange">E-mail</label>
-                                <input class="inputGet" type="email" id="emailChange" placeholder="Insira seu e-mail">
+                                <label class="emailMentor" for="email">E-mail</label>
+                                <input class="inputGet" type="email" id="emailMentor" placeholder="Insira seu e-mail">
                             </div>
                         </div>
-                        <button class="btnGetCard" id="salvarMentor" type="submit">
+                        <button class="getcard" id="salvaMentor" type="submit">
                             Salvar
                         </button>
                     </form>
@@ -115,7 +116,7 @@
         </div>
     </div>
 
-    <script defer src="../../js/mentor/edit.js"></script>
+    <script defer src="../../js/mentor/cadastro.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,6 @@
 .containerBox {
   display: flex;
   width: 100%;
-  background-color: red;
 }
 
 .iconSideMenu {
@@ -25,7 +24,7 @@
 .menu {
   background: #482d83;
 }
-.logo {
+.titleSideBar {
   display: flex;
   margin: 20px;
   font-size: 20px;
@@ -71,7 +70,6 @@
 .boxContent {
   background: #fcfcfc;
   width: 100%;
-  max-width: 1440px;
 }
 .headerUser {
   display: flex;
@@ -89,22 +87,22 @@
 }
 h4 {
   margin: 25px;
-  font-size: 32px;
-  font-weight: 600;
+  font-size: 25px;
 }
 .formContent {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
+  margin: 30px;
 }
 
 .mainContent {
   background: white;
+  max-width: 95%;
   border-radius: 24px;
-  padding: 2rem;
+  padding: 0.1px;
   box-shadow: 0px 0px 25px 0px rgba(163, 163, 163, 0.2);
-  height: 836px;
-  margin: 0 2rem;
+  margin-left: 15px;
 }
 
 .titleBackMain {
@@ -112,6 +110,15 @@ h4 {
   margin-left: 15px;
 }
 
+.searchBtn {
+  font-size: 16px;
+  width: 400px;
+  height: 56px;
+  border-radius: 16px;
+  padding-left: 16px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 16px;
+}
 .input {
   width: 325px;
   height: 40px;
@@ -139,28 +146,45 @@ h4 {
 .searchBtn i {
   position: absolute;
   top: 205px;
-  left: 520px;
+  left: 570px;
 }
 #searchGlass {
   cursor: pointer;
 }
 
-/*---------------TABELA--------------------*/
-
 .headerContent {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #482d83;
-  border-radius: 16px 16px 0 0;
-  padding: 10px;
+}
+.headerTab {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.headerTabAct {
+  text-align: center;
+}
+
+.leftCurve {
+  border-radius: 16px 0px 0px 0px;
+}
+.rightCurve {
+  border-radius: 0px 16px 0px 0px;
+}
+
+.dataBox {
   color: white;
+  background: #482d83;
+  height: 65px;
+  font-size: 12px;
+  padding: 20px 0px;
 }
 
 .dataList {
-  height: 75px;
-  padding: 16px 40px;
-  margin: -20px 0;
+  height: 80px;
+  padding: 10px 10px;
+  margin: -17px 0;
+  font-size: 12px;
 }
 .dataList :nth-child(1) {
   margin-right: 5px;
