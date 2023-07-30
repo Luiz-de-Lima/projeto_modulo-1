@@ -1,5 +1,4 @@
-//---------------SOLICITAÇÃO POST NA API, SE NÃO ROLAR VAI TER MSG XoXo------------//
-const novomentor = async (mentores) => {
+const novoMentor = async (mentores) => {
   try {
     await fetch('https://apimentorclass.onrender.com/mentores', {
       method: 'POST',
@@ -9,7 +8,7 @@ const novomentor = async (mentores) => {
       },
       body: JSON.stringify(mentores)
     });
-    window.location = "mentorIndex.html";
+    window.location = "mentor.html";
   } catch (error) {
     console.error("Erro ao criar novo mentor:", error);
   }
@@ -24,7 +23,7 @@ formulario.addEventListener('submit', (event) => {
   const nome = formulario.elements['nomeMentor'].value;
   const email = formulario.elements['emailMentor'].value;
 
-  if (!validarCamposPreenchidos(nome, email)) {
+  if (!validaCamposPreenchidos(nome, email)) {
     alert('Por favor, preencha todos os campos do formulário.');
     return;
   }
@@ -34,12 +33,11 @@ formulario.addEventListener('submit', (event) => {
     email: email,
   };
 
-  novomentor(mentores);
+  novoMentor(mentores);
 });
 
-//------CASO O FORM DO CÓDIGO ANTERIOR ESTEJA NÃO ESTEJA TOTAL PREENCHIDO ELE NÃO DEIXA IR ADIANTE--------// 
-//-------------GARANTE QUE NÃO HAVERÁ ARRAYS VAZIAS!------------//
-const validarCamposPreenchidos = (nome, email) => {
+// só prossegue caso o form esteja totalmente preenchido
+const validaCamposPreenchidos = (nome, email) => {
   return nome.trim() !== '' && email.trim() !== '';
 };
 

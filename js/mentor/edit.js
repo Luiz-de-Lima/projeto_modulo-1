@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // -- OBTENDO O ID DO MENTOR DA URL
+  // -- pegando o id do mentor
   const formulario = document.getElementById('formulario');
   let mentoresId = null;
 
@@ -10,14 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
     mentoresId = params.get('id');
   };
 
-  // ----------------- BUSCANDO OS DADOS DO MENTOR -----------------
-  const buscaMentor = async () => {
+  // buscar os dados do mentor
+  const searchMentor = async () => {
     const response = await fetch(`https://apimentorclass.onrender.com/mentores/${mentoresId}`);
     const mentor = await response.json();
     return mentor;
   };
 
-  // ----------------- ATUALIZANDO OS DADOS DO MENTOR -----------------
+  //ATUALIZANDO OS DADOS DO MENTOR
   const alteraItem = async (mentor) => {
     await fetch(`https://apimentorclass.onrender.com/mentores/${mentoresId}`, {
       method: 'PUT',
@@ -27,20 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
       body: JSON.stringify(mentor)
     });
 
-    window.location = 'mentorIndex.html';
+    window.location = 'mentor.html';
   };
 
-  // ----------------- CARREGANDO OS DADOS NO FORMULÁRIO -----------------
-  const carregarDadosFormulario = async (mentor) => {
+  // carregando os dados do form
+  const loadFormData = async (mentor) => {
     document.getElementById('nameChange').value = mentor.nome;
     document.getElementById('emailChange').value = mentor.email;
   };
 
-  // ----------------- CARREGANDO OS DADOS DO MENTOR -----------------
-  const carregarDados = async () => {
+
+  const loadData = async () => {
     getIdUrl();
-    const mentor = await buscaMentor();
-    carregarDadosFormulario(mentor);
+    const mentor = await searchMentor();
+    loadFormData(mentor);
   };
 
   // ----------------- EVENTO DE ENVIO DO FORMULÁRIO -----------------
@@ -63,6 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
     await alteraItem(mentor);
   });
 
-  // ----------------- CHAMANDO A FUNÇÃO PARA CARREGAR OS DADOS -----------------
-  carregarDados();
+  // ----------------- carregando os dados-----------------
+  loadData();
 });
