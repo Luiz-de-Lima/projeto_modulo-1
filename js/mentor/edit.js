@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ----------------- OBTENDO O ID DO MENTOR DA URL -----------------
+  // -- OBTENDO O ID DO MENTOR DA URL
   const formulario = document.getElementById('formulario');
   let mentoresId = null;
 
