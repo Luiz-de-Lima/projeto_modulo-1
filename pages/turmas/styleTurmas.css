@@ -154,31 +154,14 @@ h4 {
 
 .headerContent {
   display: flex;
-}
-.headerTab {
-  width: 100%;
-  text-align: center;
-  font-size: 15px;
-}
-
-.headerTabAct {
-  text-align: center;
-}
-
-.leftCurve {
-  border-radius: 16px 0px 0px 0px;
-}
-.rightCurve {
-  border-radius: 0px 16px 0px 0px;
-}
-
-.dataBox {
-  color: white;
+  justify-content: space-between;
+  align-items: center;
   background: #482d83;
-  height: 65px;
-  font-size: 12px;
-  padding: 20px 0px;
+  border-radius: 16px 16px 0 0;
+  padding: 10px;
+  color: white;
 }
+/*  */
 
 .dataList {
   height: 80px;

@@ -129,7 +129,7 @@ const novaTurma = async (turmas) => {
             },
             body: JSON.stringify(turmas)
         });
-        window.location = "turmasIndex.html";
+        window.location = "turmas.html";
     } catch (error) {
         console.error("ERRO AO CRIAR NOVA TURMA:", error);
     }

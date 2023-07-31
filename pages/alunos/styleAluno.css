@@ -105,7 +105,7 @@ h4 {
   margin-left: 15px;
 }
 
-searchBtn {
+.searchBtn {
   font-size: 16px;
   width: 400px;
   height: 56px;
@@ -149,29 +149,17 @@ searchBtn {
 
 .headerContent {
   display: flex;
-}
-.headerTab {
-  width: 100%;
-  text-align: center;
-}
-
-.headerTabAct {
-  text-align: center;
-}
-
-.leftCurve {
-  border-radius: 16px 0px 0px 0px;
-}
-.rightCurve {
-  border-radius: 0px 16px 0px 0px;
+  justify-content: space-between;
+  align-items: center;
+  background: #482d83;
+  border-radius: 16px 16px 0 0;
+  color: white;
 }
 
 .dataBox {
   color: white;
-  background: #482d83;
   height: 65px;
   padding: 24px 40px;
-  /* max-width: 100%; */
 }
 
 .dataList {

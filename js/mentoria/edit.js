@@ -68,7 +68,7 @@ const editarMetoria = async (mentorias) => {
             },
             body: JSON.stringify(mentorias)
         });
-        window.location = "./mentoriaIndex.html";
+        window.location = "./mentoria.html";
     } catch (error) {
         console.error("ERRO AO EDITAR MENTORIA:", error);
         // Adicionar mensagem de erro ao usuário (opcional)
